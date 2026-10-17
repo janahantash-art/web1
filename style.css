@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Isometra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+button {
+    background-color: #f4bcb1;
+    color: #552922;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+}
+
+button:hover {
+    color: #b86c67;
+    background-color: #331339;
+}
+body {
+    background-color: #f5e3f5;
+    background-image: url(p3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    overflow-wrap: break-word;
+}
+
+.name {
+    font-family: "Black Ops One", system-ui;
+    font-weight: 400;
+    font-size: 30px;
+    background-color: #fab7d8;
+    text-align: center;
+    padding: 40px 20px;
+    width: 90%;
+    margin : 20px auto ;
+    box-shadow: 0 5px 8px rgb(123, 77, 85);
+    border-radius: 50px;
+}
+
+.name::before , .name::after {
+    content: "👋 ";
+}
+
+ p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 20px auto 35px;
+    padding: 10px;
+    max-width: 700px;
+}
+.jana p::after , .jana p::before{
+ content:"✬" ;
+ color: #f7eb00;
+
+}
+.nav-bar ul {
+    display: flex;
+ /* flex-direction: row;*/
+    justify-content: center;
+    align-items: stretch;
+  flex-wrap: wrap; /* بحثت عن هاي و بتعطي شكل للصفحة أحلى و أحسن لأن بتخليهم جنب بعض دام في وسع يضلوا جنب بعض*/
+   list-style-type: none;
+    padding : 0 ;
+}
+
+.nav-bar li{
+  margin : 10px;
+}
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 130px;
+    min-height: 100px;
+    padding: 15px;
+    box-shadow: 0 7px 10px rgb(123, 77, 85);
+}
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    max-width: 1110px;
+    padding: 30px;
+    margin: 35px auto;
+    border-radius: 60px;
+}
+.section-title {
+    font-family: "Isometra", serif;
+    font-weight: 400;
+    font-size: 35px;
+    margin: 10px 20px;
+}
+.section-title::before,
+.section-title::after {
+    content: "🌸 ";
+}
+#about {
+    background-color: #e1b5ed;
+    box-shadow: 0 7px 10px pink;
+    color: #892f72;
+}
+.purple {
+    background-color: #e1b5ed;
+    color: #2e1434;
+}
+#interests {
+    background-color: #c3ecb4;
+    box-shadow: 0 7px 10px rgb(88, 128, 81);
+    color: #1e8626;
+}
+.green {
+    background-color: #c3ecb4;
+    color: #295631;
+}
+#education {
+    background-color: #b5e1ed;
+    box-shadow: 0 7px 10px rgb(81, 128, 128);
+    color: #1d3595;
+}
+.blue {
+    background-color: #b5e1ed;
+    color: #2e4f4f;
+}
+#activities {
+    background-color: hsl(64, 70%, 75%);
+    box-shadow: 0 7px 10px rgb(128, 128, 81);
+    color: #4a5421;
+}
+.yellow {
+    background-color: hsl(64, 70%, 75%);
+    color: #4f4a2e;
+}
+#projects {
+    background-color: #f9abab;
+    box-shadow: 0 7px 10px rgb(135, 82, 82);
+    color: #6c2929;
+}
+.red {
+    background-color: #f9abab;
+    color: #4f2e2e;
+}
+#contact {
+    background-color: #f1c08f;
+    box-shadow: 0 7px 10px rgb(128, 128, 81);
+    color: #4f4a2e;
+}
+.orange {
+    background-color: #f1c08f;
+    color: #4f4a2e;
+}
+
+.section p {
+    text-align: center;
+    padding: 10px;
+    max-width: 700px;
+    margin: 10px auto;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+img {
+    width: 100%;
+    max-width: 400px;
+    margin: 15px auto;
+    border-radius: 50px;
+}
+
+.section h3 {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px;
+    padding: 12px;
+    background-color: #efc4c1;
+    box-shadow: 0 7px 10px rgb(219, 148, 160);
+    color: #392619;
+}
+
+ table {
+    width: 100%;
+    max-width: 900px;
+   table-layout: fixed;
+    font-size: 15px;
+}
+@media screen and (max-width: 768px) {
+    .name {
+        font-size: 24px;
+        padding: 25px 12px;
+        width: 94%;
+        border-radius: 30px;
+    }
+    .nav-bar ul {
+        justify-content: center;
+    /*    display: flex;
+        flex-direction: column; جربت هاي بس بخليهم فوق بعض حتى لو في وسع يضلوا جنب بعض بس بصير عمود
+        align-items: center;*/
+    }
+
+   .nav-bar li {
+        margin: 6px;
+    }
+
+    .box {
+        width: 115px;
+        min-height: 80px;
+        padding: 10px;
+    }
+    .section {
+        width: 94%;
+        padding: 8px;
+        margin: 6px auto;
+        border-radius: 30px;
+    }
+    button {
+        font-size: 14px;
+    }
+}
+
+
+
+
